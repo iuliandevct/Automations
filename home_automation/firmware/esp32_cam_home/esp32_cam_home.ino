@@ -2,13 +2,13 @@
 #include <WiFi.h>
 #include <WebServer.h>
 
-const char* ssid = "PANANET";
-const char* password = "42064589";
+const char* ssid = "Bitsense";
+const char* password = "bitsenselovesyouback2025$";
 
-IPAddress local_IP(192, 168, 1, 160);
-IPAddress gateway(192, 168, 1, 1);
+IPAddress local_IP(10, 0, 1, 100);
+IPAddress gateway(10, 0, 1, 1);
 IPAddress subnet(255, 255, 255, 0);
-IPAddress dns(192, 168, 1, 1);
+IPAddress dns(10, 0, 1, 1);
 
 // Use GPIO13 for a relay if you are not using the SD card.
 // Do not drive a bare relay coil directly from the ESP32 pin.

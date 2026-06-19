@@ -7,13 +7,13 @@ Small local home automation project for ESP32-CAM devices and Home Assistant.
 Current device:
 
 - ESP32-CAM AI Thinker
-- Static IP: `192.168.1.160`
-- Wi-Fi SSID: `PANANET`
-- Camera endpoint: `http://192.168.1.160/capture`
+- Static IP: `10.0.1.100`
+- Wi-Fi SSID: `Bitsense`
+- Camera endpoint: `http://10.0.1.100/capture`
 - Relay endpoints:
-  - `http://192.168.1.160/relay/on`
-  - `http://192.168.1.160/relay/off`
-  - `http://192.168.1.160/status`
+  - `http://10.0.1.100/relay/on`
+  - `http://10.0.1.100/relay/off`
+  - `http://10.0.1.100/status`
 
 ## Arduino IDE Settings
 
@@ -42,4 +42,3 @@ GPIO0          -> GND only while uploading
 ```
 
 After upload, remove `GPIO0 -> GND` and press `RST`.
-
