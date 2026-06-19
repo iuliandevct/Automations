@@ -1,0 +1,17 @@
+# Add these snippets to Home Assistant configuration.yaml, or split them into
+# the matching package files if your setup uses packages.
+
+camera:
+  - platform: generic
+    name: ESP32 CAM
+    still_image_url: "http://10.0.1.100/capture"
+
+switch:
+  - platform: command_line
+    switches:
+      esp32_cam_relay:
+        friendly_name: "ESP32 CAM Relay"
+        command_on: "curl http://10.0.1.100/relay/on"
+        command_off: "curl http://10.0.1.100/relay/off"
+        command_state: "curl http://10.0.1.100/status"
+        value_template: "{{ value_json.relay == true }}"
